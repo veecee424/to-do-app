@@ -1,0 +1,88 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to right, #0a1a24, gray, white);
+}
+
+#container {
+    box-shadow: 5px 5px 20px black;
+    width: 300px;
+    margin: 130px auto;
+    background-color: lightgrey;
+}
+
+input {
+    width: inherit;
+    box-sizing: border-box;
+    color: #0a1a24;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: lightgray;
+}
+
+input:focus {
+    background-color: white;
+    border: 2px solid #0a1a24;
+    outline: none;
+}
+
+/*This class would be applied to a class toggle function to specify when a task is done or not on an event call*/
+.completed {
+    color: gray;
+    text-decoration: line-through; 
+}
+
+h1 {
+    background-color: #0a1a24;
+    margin: 0;
+    padding: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+ul {
+    padding-inline-start: 0px;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+li:nth-child(2n) {
+    background-color:#f7f7f7;
+}
+
+.fa-plus {
+    float: right;
+}
+
+span {
+    opacity: 0;
+    /*Initially, the icon in the span tag isn't shown through opacity*/
+    transition: 0.8s ease-in;
+}
+
+li:hover span {
+    display: inline-block;
+    width: 30px;
+    opacity: 1;
+    /*Then on hover on a list item, apply the stylings to the span element*/
+}
+/*
+span {
+    background-color: red;
+    color: white;
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 0;
+    padding-top: 15px;
+}
+*/
